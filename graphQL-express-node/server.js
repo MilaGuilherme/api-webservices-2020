@@ -70,3 +70,31 @@ app.use('/graphql', graphqlHTTP({
 app.listen(4000, () => {
   console.log('Running a GraphQL API server at localhost:4000/graphql');
 });
+
+// Rodar no console para testar
+// var author = 'andy';
+// var content = 'hope is a good thing';
+// var query = `mutation CreateMessage($input: MessageInput) {
+//   createMessage(input: $input) {
+//     id
+//   }
+// }`;
+
+// fetch('/graphql', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Accept': 'application/json',
+//   },
+//   body: JSON.stringify({
+//     query,
+//     variables: {
+//       input: {
+//         author,
+//         content,
+//       }
+//     }
+//   })
+// })
+//   .then(r => r.json())
+//   .then(data => console.log('data returned:', data));
